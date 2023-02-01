@@ -4,7 +4,22 @@
   "description": "backend for automat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.13",
+    "db-migrate-mysql": "^2.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   },
   "author": "ivanov-victor-ivt20-2",
   "license": "ISC"

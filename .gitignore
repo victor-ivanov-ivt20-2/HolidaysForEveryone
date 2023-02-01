@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/assets/fonts
 
 # testing
 /coverage
@@ -30,3 +31,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# backend
+/backend/.env
+/backend/node_modules
