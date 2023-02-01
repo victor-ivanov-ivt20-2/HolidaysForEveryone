@@ -12,7 +12,14 @@ app.use(express.json({extended: true}))
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 app.use('/files', express.static(path.join(__dirname, 'storage/public')))
-app.use(cors())
+app.use(cors({
+    credentials: true,
+    origin: [
+        "http://localhost:2023",
+        "http://127.0.0.1:2023",
+        "https://holidays-for-everyone.vercel.app/"
+    ]
+}))
 
 const start = async () => {
     try {

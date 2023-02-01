@@ -4,7 +4,7 @@ const App = () => {
   
 
   return (
-    <div>hello</div>
+    <div>hello, everyone</div>
   )
 }
 
