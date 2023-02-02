@@ -1,1 +1,8 @@
 @import "normalize.css";
+@import "container.scss";
+@import "header.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}

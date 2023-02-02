@@ -1,6 +1,6 @@
 
 
-const App = () => {
+const Main = () => {
   
 
   return (
@@ -8,4 +8,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Main
