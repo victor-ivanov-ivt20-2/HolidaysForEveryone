@@ -19,12 +19,12 @@ const Header = () => {
                             <li className="header__item">
                                 <Link className={router.pathname == "/animators" ? "header__active-link" : ""} href="/animators">Аниматоры</Link>
                             </li>
-                            <li className="header__item">
+                            {/* <li className="header__item">
                                 <Link className={router.pathname == "/food" ? "header__active-link" : ""} href="/food">Питание</Link>
                             </li>
                             <li className="header__item">
                                 <Link className={router.pathname == "/taxi" ? "header__active-link" : ""} href="/taxi">Детское такси</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>

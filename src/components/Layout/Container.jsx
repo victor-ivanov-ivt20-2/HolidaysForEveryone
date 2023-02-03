@@ -1,5 +1,5 @@
 import MainHeader from "../Header"
-
+import MainFooter from "../Footer"
 const Container = ({ children }) => {
 
     return (
@@ -8,7 +8,7 @@ const Container = ({ children }) => {
             <div className={"content"}>
                 {children}
             </div>
-            
+            <MainFooter></MainFooter>
         </>
     )
 }

@@ -24,6 +24,12 @@
     .places__item-button {
         outline: none;
         border: none;
+        cursor: pointer;
+        background: #ccc;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
     .places__item-price {
         font-size: 24px;
@@ -64,4 +70,7 @@
     width: 50px;
     display: flex;
     padding: 0;
+}
+.places__item-active {
+    color: green;
 }

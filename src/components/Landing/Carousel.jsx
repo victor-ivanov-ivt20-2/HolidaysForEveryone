@@ -31,8 +31,8 @@ const Carousel = (props) => {
     return (
 
         <div style={{ overflow: "hidden", position: "relative" }}>
-            <button className="places__left" onClick={toPrev}><LeftArrow /></button>
-            <button className="places__right" onClick={toNext}><RightArrow /></button>
+            <div className="places__left" onClick={toPrev}><LeftArrow /></div>
+            <div className="places__right" onClick={toNext}><RightArrow /></div>
             <ul className="places__list" style={{ ...props.fullWidth, ...move, transition: "all .3s" }}>
                 {listItems}
             </ul>

@@ -2,11 +2,19 @@ import { useState, useEffect } from "react"
 import Carousel from "./Carousel"
 import axios from 'axios'
 import Image from 'next/image'
-const CarouselForPlace = () => {
+const CarouselForOrderPlace = (props) => {
     const [places, setPlaces] = useState([])
     const [fullWidth, setFullWidth] = useState({
         width: "1280px"
     })
+    const [choosenPlace, setChoosenPlace] = useState(null)
+    const chooseThis = index => {
+        if (places[index]) {
+            setChoosenPlace(index)
+            props.chooseWhat(places[index])
+
+        }
+    }
     const getPlaces = async () => {
         return axios.get("/api/places").then(response => {
             setPlaces(JSON.parse(response.data))
@@ -34,7 +42,9 @@ const CarouselForPlace = () => {
 
                     <Image className="places__item-img" src={place.img}
                         width={250} height={250} alt={place.name} />
-                    <button className="places__item-button">Заказать стол</button>
+                    <div onClick={() => {
+                        chooseThis(index)
+                    }} className="places__item-button">{choosenPlace === index ? "Этот стол выбран" : "Заказать стол"}</div>
                     <span className="places__item-price">
                         {place.price} &#8381; за час
                     </span>
@@ -48,16 +58,16 @@ const CarouselForPlace = () => {
 
     return (
         <>
-            {   places.length > 1 ?
+            {places.length > 1 ?
                 <Carousel
-                width={290}
-                screen={1280}
-                items={places}
-                listItems={listItems}
-                fullWidth={fullWidth} /> : ""
+                    width={290}
+                    screen={1280}
+                    items={places}
+                    listItems={listItems}
+                    fullWidth={fullWidth} /> : ""
             }
         </>
     )
 }
 
-export default CarouselForPlace
+export default CarouselForOrderPlace
