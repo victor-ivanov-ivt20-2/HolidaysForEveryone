@@ -1,6 +1,6 @@
 import Image from "next/image"
 import FindPlaces from "@/components/Landing/FindPlaces"
-import CarouselPlaces from "@/components/Landing/CarouselPlaces"
+import CarouselForPlace from "@/components/Landing/CarouselForPlace"
 import { useEffect, useState } from "react"
 const FindPage = () => {
     return (
@@ -19,7 +19,7 @@ const FindPage = () => {
                     <Image src="/images/find-places.jpg" width={600} height={400} alt="hey"></Image>
 
                 </div>
-                <CarouselPlaces></CarouselPlaces>
+                <CarouselForPlace />
             </div>
         </section>
     )
