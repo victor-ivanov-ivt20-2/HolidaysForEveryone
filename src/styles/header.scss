@@ -1,19 +1,7 @@
 .header {
     height: 50px;
     padding: 25px 0;
-    background: #FFD5F8;
-    .funny-button {
-        padding: 6px 8px;
-        display: flex;
-        gap: 8px;
-        width: calc(179px - 19.667px);
-        height: calc(50px - 15.667px);
-        background: #FF9BEF;
-        border: 2px solid #FF74E9;
-        align-items: center;
-        cursor: pointer;
-        user-select: none;
-    }
+    background: #fff;
 
     h1 {
         font-style: normal;
@@ -31,7 +19,7 @@
         justify-content: space-between;
 
         .header__active-link {
-            color: #FF74E9;
+            color: #999;
         }
 
         .header__logo {
@@ -39,7 +27,7 @@
         }
 
         .header__menu {
-
+            margin-right: 25px;
             .header__list {
                 display: flex;
                 align-items: center;

@@ -8,9 +8,8 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header__inner">
-                    <Link className="header__logo funny-button" href="/">
+                    <Link className="header__logo" href="/">
                         <Logo />
-                        <h1>Татьяна</h1>
                     </Link>
                     <nav className="header__menu">
                         <ul className="header__list">
@@ -28,10 +27,6 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    <div className="header__buy funny-button">
-                        <Gift />
-                        <h1>Заказать</h1>
-                    </div>
                 </div>
             </div>
 

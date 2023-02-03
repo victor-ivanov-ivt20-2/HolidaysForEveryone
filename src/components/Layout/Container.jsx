@@ -2,13 +2,13 @@ import MainHeader from "../Header"
 
 const Container = ({ children }) => {
 
-
     return (
         <>
             <MainHeader></MainHeader>
-            <div className="container">
+            <div className={"content"}>
                 {children}
             </div>
+            
         </>
     )
 }

@@ -1,0 +1,66 @@
+.places__list {
+    display: flex;
+    padding: 0;
+    margin: 50px 0 0 15px;
+    gap: 14px;
+    align-items: center;
+    overflow: hidden;
+    .places__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        color: #3a3a3a;
+    }
+    .places__item-name {
+        font-size: 24px;
+    }
+    img {
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .places__item-button {
+        outline: none;
+        border: none;
+    }
+    .places__item-price {
+        font-size: 24px;
+        color: #000;
+        margin-top: 10px;
+        font-weight: 700;
+        text-align: end;
+    }
+}
+.places__hr {
+    height: 300px;
+    width: 2px;
+    background: #ccc;
+}
+.places__left {
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    padding: 0;
+}
+.places__right {
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 50px);
+    z-index: 1000;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    padding: 0;
+}

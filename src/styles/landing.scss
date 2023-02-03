@@ -1,0 +1,47 @@
+@import "places.scss";
+
+.content {
+    overflow: hidden;
+    transition: all .9s;
+    .page-face {
+        margin: 50px 0;
+        p {
+            margin-top: 30px;
+            width: 550px;
+            line-height: 25px;
+        }
+
+        .page-face__button {
+            outline: none;
+            border: none;
+            background: #000;
+            color: #fff;
+            border-radius: 20px;
+            width: 300px;
+            height: 70px;
+            cursor: pointer;
+            margin-top: 50px;
+            transition: all .3s;
+        }
+
+        .page-face__button:hover {
+            background: #ccc;
+            color: #000;
+        }
+
+        .container {
+            // display: flex;
+            gap: 100px;
+        }
+
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+    .page-face > .container {
+        display: flex;
+        gap: 100px;
+    }
+
+}
